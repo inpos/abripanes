@@ -65,11 +65,11 @@ function register_pane(name, def)
 end
 
 local panes_list = {
-	{"white", "White", "ffffff", }, {"blue", "Blue", "0000FF", },
-	{"cyan", "Cyan", "00FFFF", }, {"green", "Green", "00FF00", }, 
-	{"magenta", "Magenta", "FF00FF", }, {"orange", "Orange", "FF6103", }, 
-	{"violet", "Purple", "800080", }, {"red", "Red", "FF0000", }, 
-	{"yellow", "Yellow", "FFFF00", },
+	{"white", "Белая", "ffffff", }, {"blue", "Синяя", "0000FF", },
+	{"cyan", "Голубая", "00FFFF", }, {"green", "Зелёная", "00FF00", }, 
+	{"magenta", "Пурпурная", "FF00FF", }, {"orange", "Оранжевая", "FF6103", }, 
+	{"violet", "Фиолетовая", "800080", }, {"red", "Красная", "FF0000", }, 
+	{"yellow", "Жёлтая", "FFFF00", },
 }
 
 for i in ipairs(panes_list) do
@@ -79,7 +79,7 @@ for i in ipairs(panes_list) do
 	local tex = "abriglass_plainglass.png^[colorize:#"..colour..":122"
 
 	register_pane("abriglass_pane_"..name, {
-		description = description.." Glass Pane",
+		description = description.." Стеклянная Панель",
 		textures = {tex, tex, tex},
 		groups = {cracky = 3},
 		use_texture_alpha = true,
